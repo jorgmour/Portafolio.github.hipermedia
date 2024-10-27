@@ -1,0 +1,82 @@
+/* Fuente global */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  background-color: #000000; /* Fondo negro */
+  color: #FFFFFF; /* Texto del cuerpo blanco */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+h2 {
+  color: #E38E27; /* Color de los títulos */
+}
+
+/* Contenedor */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  background-color: hsl(0, 0%, 0%); /* Fondo oscuro para el contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Estilo de la imagen */
+.container img {
+  max-width: 800px; /* Imagen más pequeña dentro del contenedor */
+  max-height: 800px; /* Mantiene la imagen pequeña */
+  object-fit: contain; /* Ajusta la imagen para que se vea bien dentro del contenedor */
+  border-radius: 5px; /* Bordes ligeramente redondeados para la imagen */
+}
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+#contacto{
+    display: flex;
+}
+
+footer {
+  background-color: #000000;
+  color: #f9fafb;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+      width: 300px; /* Ajuste para pantallas más pequeñas */
+      height: 300px;
+    }
+  
+    .container img {
+      max-width: 170px; /* Imagen más pequeña en pantallas pequeñas */
+      max-height: 170px;
+    }
+  
+    .container p {
+      font-size: 1.5vw; /* Texto más pequeño en pantallas pequeñas */
+      line-height: 1.2; /* Ajusta el espacio entre líneas para legibilidad */
+      max-width: 100%; /* Asegura que el texto no exceda el ancho del contenedor */
+      word-wrap: break-word; /* Si es necesario, el texto se dividirá en varias líneas */
+    }
+  }
+  

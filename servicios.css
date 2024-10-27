@@ -1,0 +1,84 @@
+/* Fuente global */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  background-color: #000000; /* Fondo negro */
+  color: #FFFFFF; /* Texto del cuerpo blanco */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  height: 100%;
+}
+h1{
+  color: #FFFFFF;
+  font-size: 50px;
+  margin-right: 26.5%;
+}
+h3 {
+  color: #ffffff; 
+  margin-right: 35%;
+}
+.p1{
+  margin-right: 27.9%;
+  margin: 0;
+}
+p{
+  margin-right: 40;
+  margin: 0;
+}
+
+/* Contenedor */
+.container {
+  width: 1200px; /* Ancho fijo del contenedor */
+  height: 400px; /* Alto fijo del contenedor */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  background-color: #000000; /* Fondo oscuro para el contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Estilo de la imagen */
+.container img {
+  max-width: 500px; /* Imagen más pequeña dentro del contenedor */
+  max-height: 500px; /* Mantiene la imagen pequeña */
+  object-fit: contain; /* Ajusta la imagen para que se vea bien dentro del contenedor */
+  border-radius: 5px; /* Bordes ligeramente redondeados para la imagen */
+}
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  background-color: #000000;
+  color: #f9fafb;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    width: 300px; /* Ajuste para pantallas más pequeñas */
+    height: 300px;
+  }
+
+  .container img {
+    max-width: 300px; /* Imagen más pequeña en pantallas pequeñas */
+    max-height: 300px;
+  }
+}
